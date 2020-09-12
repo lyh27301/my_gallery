@@ -28,6 +28,7 @@ header {
 /* ========================================= */
 .name {
     margin-bottom: 30px;
+    font-style: italic;
 }
 
 .intro {
