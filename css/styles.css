@@ -3,10 +3,16 @@ body {
     width: 100vw;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* ========================================= */
 /*                  Header                   */
 /* ========================================= */
 header {
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -20,14 +26,22 @@ header {
 /* ========================================= */
 /*     Dropdown Menu for Small Screen        */
 /* ========================================= */
-.current {
-    display: flex;
-    justify-content: space-between;
-    
+.name {
+    margin-bottom: 30px;
 }
 
-#currentCategory {
-    margin-right: 5px;        
+.intro {
+    color: #999;
+    margin-bottom: 30px;
+}
+
+#current {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currentCategory {
+    margin-right: 15px;        
 }
 
 #menu-icon {
@@ -37,8 +51,9 @@ header {
 
 .dropdown {
     /* container div */
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .dropdown-content {
@@ -46,23 +61,34 @@ header {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, .8);
-    max-width: 100%;
-    min-width: 100px;
+    width: 100px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
     z-index: 1;
     text-align: center;
     
 }
 
-.dropdown-content * {
-    color: white;
-}
 
 .dropdown-content .category {
+    width: 100%;
+    display: block;
     border-bottom: 1px solid #eeeeee;
     padding: 10px 5px;
     list-style-type: none;
     margin: 0 auto;
+}
+
+#top {
+    font-weight: 900;
+    color: gray;
+    transform: scale(2, 1.5);
+    right: 18px;
+    bottom: 15px;
+    text-decoration: none;
+    padding: 6px 7px;
+    position: fixed;
+    height: 30px;
+    background-color: rgba(220, 220, 220, .5);
 }
 
 /* ======================================== */
