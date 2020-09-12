@@ -65,7 +65,7 @@ header {
 }
 
 .dropdown-content {
-    margin-top: -15px;
+    margin-top: -10px;
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, .8);
@@ -96,7 +96,7 @@ header {
     padding: 6px 7px;
     position: fixed;
     height: 30px;
-    background-color: rgba(220, 220, 220, .5);
+    background-color: rgba(252, 251, 246, .7);
 }
 
 /* ======================================== */
@@ -104,6 +104,14 @@ header {
 /* ======================================== */
 main {
     padding: 30px;
+}
+
+.album {
+    margin-top: 50px;
+}
+
+.album:first-child {
+    margin-top: 10px;
 }
 
 .gallery {
